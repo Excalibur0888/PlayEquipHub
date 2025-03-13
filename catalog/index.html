@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="Explore our wide range of sports equipment and accessories at PlayEquipHub. Browse by category, price, and more to find the perfect gear for your sport.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - PlayEquipHub</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">PlayEquipHub</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/catalog" class="active">Catalog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/app">App</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="/cart">
+                            <span class="cart-count">0</span>
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog-page">
+        <div class="catalog-header">
+            <h1>Our Products</h1>
+            <div class="filters">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="Shoes">Shoes</option>
+                    <option value="Rackets">Rackets</option>
+                    <option value="Balls">Balls</option>
+                </select>
+                <select id="price-filter">
+                    <option value="">All Prices</option>
+                    <option value="0-2000">Under ₹2,000</option>
+                    <option value="2000-5000">₹2,000 - ₹5,000</option>
+                    <option value="5000+">Over ₹5,000</option>
+                </select>
+            </div>
+        </div>
+
+        <section class="catalog-grid">
+            <!-- Products will be dynamically loaded -->
+            <div class="catalog-product-card">
+                <img src="/images/shoes.jpg" alt="Premium Running Shoes">
+                <div class="product-info">
+                    <h3>Premium Running Shoes</h3>
+                    <p class="description">Professional running shoes with advanced cushioning technology.</p>
+                    <p class="price">₹4,999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/rackets.jpg" alt="Professional Tennis Racket">
+                <div class="product-info">
+                    <h3>Professional Tennis Racket</h3>
+                    <p class="description">High-performance tennis racket for professional players.</p>
+                    <p class="price">₹7,999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/balls.jpg" alt="Football Ball">
+                <div class="product-info">
+                    <h3>Football Ball</h3>
+                    <p class="description">Official size and weight football for competitive play.</p>
+                    <p class="price">₹1,999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/shoes1.jpg" alt="Training Shoes">
+                <div class="product-info">
+                    <h3>Training Shoes</h3>
+                    <p class="description">Versatile training shoes for various sports activities.</p>
+                    <p class="price">₹2,999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/rackets1.jpg" alt="Badminton Racket">
+                <div class="product-info">
+                    <h3>Badminton Racket</h3>
+                    <p class="description">Lightweight badminton racket for quick movements.</p>
+                    <p class="price">₹3,999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/balls1.jpg" alt="Basketball">
+                <div class="product-info">
+                    <h3>Basketball</h3>
+                    <p class="description">Indoor/outdoor basketball with superior grip.</p>
+                    <p class="price">₹2,499</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/shoes2.jpg" alt="Elite Running Shoes">
+                <div class="product-info">
+                    <h3>Elite Running Shoes</h3>
+                    <p class="description">Elite-level running shoes with carbon fiber plate.</p>
+                    <p class="price">₹5,999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/rackets2.jpg" alt="Table Tennis Racket">
+                <div class="product-info">
+                    <h3>Table Tennis Racket</h3>
+                    <p class="description">Professional table tennis racket with premium rubber.</p>
+                    <p class="price">₹2,999</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/balls2.jpg" alt="Volleyball">
+                <div class="product-info">
+                    <h3>Volleyball</h3>
+                    <p class="description">Competition-grade volleyball with soft touch technology.</p>
+                    <p class="price">₹1,799</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/shoes3.jpg" alt="Cross Training Shoes">
+                <div class="product-info">
+                    <h3>Cross Training Shoes</h3>
+                    <p class="description">Versatile shoes perfect for CrossFit and gym training.</p>
+                    <p class="price">₹4,499</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/rackets3.jpg" alt="Squash Racket">
+                <div class="product-info">
+                    <h3>Squash Racket</h3>
+                    <p class="description">Professional squash racket with balanced weight distribution.</p>
+                    <p class="price">₹4,599</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="catalog-product-card">
+                <img src="/images/balls3.jpg" alt="Cricket Ball">
+                <div class="product-info">
+                    <h3>Cricket Ball</h3>
+                    <p class="description">Premium leather cricket ball for match play.</p>
+                    <p class="price">₹899</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+				<section class="related-products">
+					<div class="section-container">
+							<h2>You Might Also Like</h2>
+							<div class="product-grid">
+									<!-- Related products will be dynamically loaded -->
+                  <div class="product-card">
+                      <img src="/images/accessories1.jpg" alt="Sports Water Bottle">
+                      <h3>Sports Water Bottle</h3>
+                      <p class="price">₹599</p>
+                      <button>Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                      <img src="/images/accessories4.jpg" alt="Sports Backpack">
+                      <h3>Sports Backpack</h3>
+                      <p class="price">₹1,499</p>
+                      <button>Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                      <img src="/images/accessories5.jpg" alt="Resistance Bands Set">
+                      <h3>Resistance Bands Set</h3>
+                      <p class="price">₹899</p>
+                      <button>Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                      <img src="/images/accessories6.jpg" alt="Gym Gloves">
+                      <h3>Gym Gloves</h3>
+                      <p class="price">₹799</p>
+                      <button>Add to Cart</button>
+                  </div>
+							</div>
+					</div>
+			</section>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PlayEquipHub</h3>
+                    <p>Your one-stop destination for premium sports equipment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/catalog">Catalog</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/app">Mobile App</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+										<p>Email: <a href="mailto:contact@playequiphub.com">contact@playequiphub.com</a></p>
+                    <p>Phone: <a href="tel:+911282139102">+91 12821-39102</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/terms-conditions">Terms & Conditions</a>
+                </div>
+                <p>&copy; 2025 PlayEquipHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/catalog.js"></script>
+    <script src="/js/accessories.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html> 

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="PlayEquipHub offers premium sports equipment for athletes at all levels. Find the perfect gear to enhance your performance, from professional equipment to casual sports accessories. Shop with confidence with our quality guarantee and fast shipping.">
+		<link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayEquipHub - Your Premium Sports Equipment Store</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">PlayEquipHub</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/catalog">Catalog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/app">App</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="/cart">
+                            <span class="cart-count">0</span>
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Elevate Your Game</h1>
+                    <p>Premium sports equipment for every athlete</p>
+                    <a href="/app" class="download-btn pulse">Download App</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-sports.jpg" alt="Sports Equipment">
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="section-container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <!-- Products will be dynamically loaded -->
+                    <div class="product-card">
+                        <img src="/images/shoes.jpg" alt="Premium Running Shoes">
+                        <h3>Premium Running Shoes</h3>
+                        <p class="price">₹4,999</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="/images/rackets.jpg" alt="Professional Tennis Racket">
+                        <h3>Professional Tennis Racket</h3>
+                        <p class="price">₹7,999</p>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="/images/balls.jpg" alt="Football Ball">
+                        <h3>Football Ball</h3>
+                        <p class="price">₹1,999</p>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+                <div class="view-all-container">
+                    <a href="/catalog" class="view-all-btn">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="section-container">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <a href="/catalog" class="category-card" onclick="localStorage.setItem('selectedCategory', 'shoes'); return true;">
+                        <img src="images/shoe.jpg" alt="Shoes">
+                        <h3>Shoes</h3>
+                    </a>
+                    <a href="/catalog" class="category-card" onclick="localStorage.setItem('selectedCategory', 'balls'); return true;">
+                        <img src="images/ball.jpg" alt="Balls">
+                        <h3>Balls</h3>
+                    </a>
+                    <a href="/catalog" class="category-card" onclick="localStorage.setItem('selectedCategory', 'rackets'); return true;">
+                        <img src="images/racket.jpg" alt="Rackets">
+                        <h3>Rackets</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="section-container">
+                <h2>Why Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="images/icons/quality.svg" alt="Quality" class="feature-icon">
+                        <h3>Premium Quality</h3>
+                        <p>We offer only the highest quality sports equipment from trusted brands.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/icons/support.svg" alt="Support" class="feature-icon">
+                        <h3>Expert Support</h3>
+                        <p>Our team of sports experts is here to help you make the right choice.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/icons/innovation.svg" alt="Innovation" class="feature-icon">
+                        <h3>Innovation</h3>
+                        <p>Stay ahead with the latest innovations in sports equipment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="section-container">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"PlayEquipHub has completely transformed my training experience. The quality of their products is unmatched, and their customer service is exceptional."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial1.jpg" alt="Customer 1">
+                            <div class="author-info">
+                                <h4>Rahul Sharma</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"I've been shopping for sports equipment for years, and PlayEquipHub is by far the best store I've found. Their selection is vast, and the prices are competitive."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial2.jpg" alt="Customer 2">
+                            <div class="author-info">
+                                <h4>Priya Patel</h4>
+                                <p>Mumbai, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The delivery was prompt, and the product quality exceeded my expectations. I'll definitely be a returning customer to PlayEquipHub for all my sporting needs."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/testimonial3.jpg" alt="Customer 3">
+                            <div class="author-info">
+                                <h4>Vikram Singh</h4>
+                                <p>Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новая секция: Популярные виды спорта -->
+        <section class="popular-sports">
+            <div class="section-container">
+                <h2>Popular Sports</h2>
+                <div class="sports-grid">
+                    <div class="sport-card">
+                        <div class="sport-image">
+                            <img src="images/cricket.jpg" alt="Cricket">
+                            <div class="sport-overlay">
+                                <a href="/catalog" class="sport-link" onclick="localStorage.setItem('selectedSport', 'cricket'); return true;">View Equipment</a>
+                            </div>
+                        </div>
+                        <h3>Cricket</h3>
+                        <p>India's most beloved sport with a rich history and passionate following.</p>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-image">
+                            <img src="images/football.jpg" alt="Football">
+                            <div class="sport-overlay">
+                                <a href="/catalog" class="sport-link" onclick="localStorage.setItem('selectedSport', 'football'); return true;">View Equipment</a>
+                            </div>
+                        </div>
+                        <h3>Football</h3>
+                        <p>The world's most popular sport, gaining tremendous popularity in India.</p>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-image">
+                            <img src="images/badminton.jpg" alt="Badminton">
+                            <div class="sport-overlay">
+                                <a href="/catalog" class="sport-link" onclick="localStorage.setItem('selectedSport', 'badminton'); return true;">View Equipment</a>
+                            </div>
+                        </div>
+                        <h3>Badminton</h3>
+                        <p>A fast-paced racquet sport with a strong Indian presence on the world stage.</p>
+                    </div>
+                    <div class="sport-card">
+                        <div class="sport-image">
+                            <img src="images/basketball.jpg" alt="Basketball">
+                            <div class="sport-overlay">
+                                <a href="/catalog" class="sport-link" onclick="localStorage.setItem('selectedSport', 'basketball'); return true;">View Equipment</a>
+                            </div>
+                        </div>
+                        <h3>Basketball</h3>
+                        <p>A dynamic team sport growing rapidly in popularity across urban India.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новая секция: Спортивные советы -->
+        <section class="sports-tips">
+            <div class="section-container">
+                <h2>Sports Tips & Advice</h2>
+                <div class="tips-container">
+                    <div class="tips-content">
+                        <h3>Expert Advice for Athletes</h3>
+                        <p>Our team of sports professionals shares valuable insights to help you improve your game and make the most of your equipment.</p>
+                        <ul class="tips-list">
+                            <li>
+                                <span class="tip-icon">🏏</span>
+                                <span class="tip-text">Choose cricket bats with the right weight for your playing style</span>
+                            </li>
+                            <li>
+                                <span class="tip-icon">👟</span>
+                                <span class="tip-text">Replace running shoes every 450-550 kilometers for optimal performance</span>
+                            </li>
+                            <li>
+                                <span class="tip-icon">🏸</span>
+                                <span class="tip-text">Select badminton racquets based on your skill level and playing frequency</span>
+                            </li>
+                            <li>
+                                <span class="tip-icon">⚽</span>
+                                <span class="tip-text">Maintain proper football inflation for better control and reduced injury risk</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tips-image">
+                        <img src="images/sports-tips.jpg" alt="Sports Tips">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="section-container">
+                <div class="newsletter-content">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest product updates, exclusive offers, and sports tips.</p>
+                    <form action="thanks_form.php" method="post" class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <div class="privacy-checkbox">
+                            <input type="checkbox" id="privacy-policy" required>
+                            <label for="privacy-policy">I agree with <a href="/privacy-policy">Privacy Policy</a></label>
+                        </div>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PlayEquipHub</h3>
+                    <p>Your one-stop destination for premium sports equipment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/catalog">Catalog</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/app">Mobile App</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:contact@playequiphub.com">contact@playequiphub.com</a></p>
+                    <p>Phone: <a href="tel:+911282139102">+91 12821-39102</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/terms-conditions">Terms & Conditions</a>
+                </div>
+                <p>&copy; 2025 PlayEquipHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/catalog.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html> 

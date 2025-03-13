@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+		<meta name="description" content="View and manage your shopping cart at PlayEquipHub. Review your selected sports equipment, update quantities, apply discount codes, and proceed to secure checkout for fast delivery across India.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - PlayEquipHub</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="/">PlayEquipHub</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/catalog">Catalog</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/app">App</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li class="cart-icon">
+                        <a href="/cart" class="active">
+                            <span class="cart-count">0</span>
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <section class="section-container">
+            <h1>Your Shopping Cart</h1>
+            <div class="cart-container">
+                <div class="cart-items">
+                    <!-- Cart items will be dynamically loaded -->
+                </div>
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-item">
+                        <span>Subtotal</span>
+                        <span id="subtotal">₹0</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Shipping</span>
+                        <span>Free</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total</span>
+                        <span id="total">₹0</span>
+                    </div>
+                    <a href="/contact"><button class="checkout-btn">Proceed to Checkout</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="shipping-info">
+            <div class="section-container">
+                <h2>Shipping Information</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <img src="/images/icons/shipping.svg" alt="Fast Shipping" class="info-icon">
+                        <h3>Fast Shipping</h3>
+                        <p>Free shipping on all orders above ₹1000. Delivery within 3-5 business days.</p>
+                    </div>
+                    <div class="info-card">
+                        <img src="/images/icons/returns.svg" alt="Easy Returns" class="info-icon">
+                        <h3>Easy Returns</h3>
+                        <p>30-day return policy. No questions asked returns for all unused products.</p>
+                    </div>
+                    <div class="info-card">
+                        <img src="/images/icons/secure.svg" alt="Secure Checkout" class="info-icon">
+                        <h3>Secure Checkout</h3>
+                        <p>Your payment information is processed securely. We do not store credit card details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="section-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PlayEquipHub</h3>
+                    <p>Your one-stop destination for premium sports equipment.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/catalog">Catalog</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/app">Mobile App</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+										<p>Email: <a href="mailto:contact@playequiphub.com">contact@playequiphub.com</a></p>
+                    <p>Phone: <a href="tel:+911282139102">+91 12821-39102</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-legal-links">
+                    <a href="/privacy-policy">Privacy Policy</a>
+                    <a href="/terms-conditions">Terms & Conditions</a>
+                </div>
+                <p>&copy; 2025 PlayEquipHub. All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="/js/catalog.js"></script>
+    <script src="/js/accessories.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html> 
